@@ -1,0 +1,6 @@
+{
+  "name": "DataProfiler Pro - Power Query Data Profiling & EDA Suite",
+  "description": "Universal Data Profiling and Exploratory Data Analysis (EDA) web application inspired by Power BI Power Query. Features dynamic CSV/Excel/Google Sheets import, Column Quality, Distribution, Profile, Correlation Heatmap, and Missing Value Matrix.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

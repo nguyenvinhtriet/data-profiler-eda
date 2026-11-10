@@ -14,7 +14,8 @@ export default defineConfig(() => {
       {
         name: 'copy-404-for-github-pages',
         closeBundle() {
-          const distDir = path.resolve(__dirname, 'dist');
+          const rootDir = import.meta.dirname || path.resolve('.');
+          const distDir = path.resolve(rootDir, 'dist');
           const indexPath = path.join(distDir, 'index.html');
           const notFoundPath = path.join(distDir, '404.html');
           if (fs.existsSync(indexPath)) {
@@ -25,7 +26,7 @@ export default defineConfig(() => {
     ],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(import.meta.dirname || '.', '.'),
       },
     },
     server: {
